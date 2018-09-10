@@ -12,9 +12,35 @@ The final solution will be composed of the below high level components
 
 ![10,000ft view](images/10000ft.png?raw=true "10,000 ft view")
 
+## Crawler
+
+The crawlers are custom pieces of code that have specific targets such as publicly available news websites (Seeking Alpha, Forbers, Reuters, Bloomberg etc.), Twitter, Facebook or other social media that identifies and ingests data. As most publicly available news sites have data in different formats it is likely that different crawlers will be needed per source of information.
+
+## Database
+
+Database that will hold all information. Likely a document noSQL DB for faster iteration.
+
+## WebUI
+
+Web interface to display the necessary information to the user.
+
+## Notifications
+
+(At a later stage) - users will be able to subscriber for notifications for sentiment changes etc.
+
+## Sentiment Analysis
+
+AI-as-a-Service platform to be used to analyze suggested data.
+
+## Prediction Model
+
+(At a later stage) - identify how positive news articles affect stock value
+
 Detail on components 
 
 ![System components](/images/Components.png?raw=true "Solution Components")
+
+These are some initial thoughts on components to create the necessary solution.
 
 
 # Work so far
