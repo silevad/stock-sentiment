@@ -13,13 +13,18 @@ page = requests.get('https://seekingalpha.com/symbol/AAPL?s=aapl', headers=heade
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
+links = []
+for content in soup.findAll('div',attrs={'class': 'symbol_article'}):
+    link = content.find('a', href=True)
+    links.append(link)
+print(links)	
 
-maza = soup.findAll('div',attrs={'class': 'symbol_article'})
+print("****************************************************************")
 
 urls = []
-for h in soup.findAll('div',attrs={'class': 'symbol_article'}):
-    a = h.find('a')
-    urls.append(a.attrs['href'])
-
-
+for content in soup.findAll('div',attrs={'class': 'symbol_article'}):
+    link = content.find('a', href=True)
+    if link != None:
+        urls.append(link.attrs['href'])
 print(urls)	
+
