@@ -12,7 +12,7 @@ exports.handler = (event, context, callback) => {
 
     let options = {
         host : 'www.alphavantage.co',
-        path:  '/query?function=TIME_SERIES_DAILY&symbol=' + symbol + '&apikey=demo',
+        path:  '/query?function=TIME_SERIES_DAILY&symbol=' + symbol + '&apikey=69EIOWSLWWDLTMWU',
         port: 443,
         method: 'GET'
 
