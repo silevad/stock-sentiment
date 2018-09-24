@@ -1,0 +1,12 @@
+{
+  "runtimeVersion": "STABLE",
+  "dataStudio": {
+    "name": "Stock sentiment analysis - Arthur D. Little",
+    "logoUrl": "https://raw.githubusercontent.com/npm/logos/master/%22npm%22%20lockup/npm-logo-simplifed-with-white-space.png",
+    "company": "Arthur D. Little",
+    "addonUrl": "https://github.com/google/datastudio/tree/master/community-connectors/stock-sentiment-analysis",
+    "supportUrl": "https://github.com/google/datastudio/issues",
+    "description": "Visualize stock sentiment analysis versus stock price",
+    "sources": ["sentiment"]
+  }
+}
